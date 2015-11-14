@@ -192,7 +192,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand"  href="<?php echo HTMLROOT?>">Test Project</a>
+          <a class="navbar-brand" id="nav-item-home" href="<?php echo HTMLROOT?>">Test Project</a>
 		</div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
