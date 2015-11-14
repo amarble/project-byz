@@ -196,22 +196,22 @@
 		</div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-					  <li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="<?php echo HTMLROOT?>items">Inventory</a>
-								<li><a href="<?php echo HTMLROOT?>statuses">Statuses</a>
-								<li><a href="<?php echo HTMLROOT?>vendors">Vendors</a>
-								<li><a href="<?php echo HTMLROOT?>tags">Tags</a>
-								<li><a href="<?php echo HTMLROOT?>alerts">Alerts</a>
-							</ul>
-						</li>
-					</ul>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage <span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+				  <li id="nav-item-inventory"><a href="<?php echo HTMLROOT?>items">Inventory</a>
+				  <li id="nav-item-statuses"><a href="<?php echo HTMLROOT?>statuses">Statuses</a>
+				  <li id="nav-item-vendors"><a href="<?php echo HTMLROOT?>vendors">Vendors</a>
+				  <li id="nav-item-tags"><a href="<?php echo HTMLROOT?>tags">Tags</a>
+				  <li id="nav-item-alerts"><a href="<?php echo HTMLROOT?>alerts">Alerts</a>
+			    </ul>
+			</li>
+		  </ul>
 		  <ul class="nav navbar-nav navbar-right">
 			<?php if ($user = Auth::User()): ?>
-				<li><a href="<?php echo HTMLROOT?>users/logout">Logout</a>
+				<li id="nav-item-logout"><a href="<?php echo HTMLROOT?>users/logout">Logout</a>
 			<?php else: ?>
-				<li><a href="<?php echo HTMLROOT?>users/login">Login</a>
+				<li id="nav-item-login"><a href="<?php echo HTMLROOT?>users/login">Login</a>
 			<?php endif; ?>
 		  </ul>
         </div>
